@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Payment Form</title>
+</head>
+<body>
+    <form action="">
+        <h1>Payment Form</h1>
+        <h3>UserDetails:</h3>
+        <p>Name: *<input type="text" name="name" id="name" required></p>
+        <fieldset>
+            <legend>Gender: *</legend>
+            <p>Male: <input type="radio" name="gender" id="male" required></p><br>
+            <p>FeMale:<input type="radio" name="gender" id="female" required></p><br>
+        </fieldset>
+        <p>Address:
+            <textarea name="address" id="address" cols="50" rows="10"></textarea>
+        </p><br>
+        <p>Email: *
+            <input type="email" name="email" id="email" required>
+        </p><br>
+        <p>PindCode: *
+            <input type="number" name="pincode" id="pincode" required>
+        </p><br>
+        <h3>Payment Details:</h3>
+        <p>CardType: *
+            <select name="paymentdetails" id="paymentdetails" required>
+                <option value="">--Select a type--</option>
+                <option value="visa">Visa Card</option>
+                <option value="debit">Debit Card</option>
+                <option value="master">Master Card</option>
+            </select>
+        </p><br>
+        <p>CardNumber: *
+            <input type="number" name="Cardnumber" id="cardnumber" required>
+        </p><br>
+        <p>Expiration Date: *
+            <input type="date" name="expirationdate" id="expirationdate" required>
+        </p><br>
+        <p>CVV: *
+            <input type="password" name="cvv" id="cvv" required>
+        </p><br>
+        <p>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </p>
+    </form>
+</body>
+</html>
